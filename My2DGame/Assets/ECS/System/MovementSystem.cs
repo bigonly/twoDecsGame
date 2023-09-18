@@ -22,6 +22,12 @@ namespace NTC.Source.Code.Ecs
                 ref var speed = ref movableComponent.speed;
                 ref var gravity = ref movableComponent.gravity;
 
+                //----Вывести в отдельную систему----
+                ref var velocity = ref movableComponent.velocity;
+                velocity.y += movableComponent.gravity * Time.deltaTime;
+                Debug.Log(velocity);
+                //----конец выводимого кода----
+
                 rigidbody2D.velocity = new Vector2(direction.x * speed, 0);
             }
         }

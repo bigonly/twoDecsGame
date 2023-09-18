@@ -2,5 +2,8 @@
 
 namespace NTC.Source.Code.Ecs
 {
-    public class MovableProvider : MonoProvider<MovableComponent> { }
+    public class MovableProvider : MonoProvider<MovableComponent>
+    {
+
+    }
 }

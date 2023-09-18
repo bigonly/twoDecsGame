@@ -31,13 +31,17 @@ namespace NTC.Source.Code.Ecs
         private void AddSystems()
         {
             systems
-            .Add(new PlayerInputSystem())
-            .Add(new MovementSystem())
+                .Add(new PlayerJumpSendEventSystem())
+                .Add(new GroundCheckSystem())
+                .Add(new PlayerInputSystem())
+                .Add(new PlayerJumpSystem())
+                .Add(new MovementSystem())
             ;
         }
         private void AddOneFrames()
         {
-
+            systems
+                .OneFrame<JumpEvent>();
         }
 
         private void Update()

@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 804335348}
   - component: {fileID: 804335351}
   - component: {fileID: 804335349}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TilemapCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4488,7 +4488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b373d19f949e7fa4f97aafb0a7c71e24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &884768529
+--- !u!114 &884768534
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4502,7 +4502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value:
     transform: {fileID: 884768526}
---- !u!114 &884768530
+--- !u!114 &884768535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4516,8 +4516,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value:
     rigidbody2D: {fileID: 884768523}
-    speed: 10
-    gravity: -9.81
+    velocity: {x: 0, y: 0}
+    speed: 5
+    gravity: -1
+--- !u!114 &884768536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884768522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c952d475cd1e4764097930acc04740af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    force: 10
+--- !u!114 &884768537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884768522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106eab9e2d9218e41a5f8165561f1d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    groundMask:
+      serializedVersion: 2
+      m_Bits: 512
+    groundCheckCircle: {fileID: 884768526}
+    groundDistance: 1
+    isGrounded: 1
 --- !u!1 &1301524503
 GameObject:
   m_ObjectHideFlags: 0
@@ -8770,6 +8804,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 934807296492081633, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
+      propertyPath: convertMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4272299544976437238, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -8846,14 +8884,20 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 884768530}
+      addedObject: {fileID: 884768535}
     - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 884768529}
+      addedObject: {fileID: 884768534}
     - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
       insertIndex: -1
       addedObject: {fileID: 884768528}
     - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
       insertIndex: -1
       addedObject: {fileID: 884768527}
+    - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 884768537}
+    - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 884768536}
   m_SourcePrefab: {fileID: 100100000, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
