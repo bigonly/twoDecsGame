@@ -4518,7 +4518,7 @@ MonoBehaviour:
     rigidbody2D: {fileID: 884768523}
     velocity: {x: 0, y: 0}
     speed: 5
-    gravity: -1
+    gravity: -27
 --- !u!114 &884768536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4532,7 +4532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value:
-    force: 10
+    force: 1.8
 --- !u!114 &884768537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4551,7 +4551,7 @@ MonoBehaviour:
       m_Bits: 512
     groundCheckCircle: {fileID: 884768526}
     groundDistance: 1
-    isGrounded: 1
+    isGrounded: 0
 --- !u!1 &1301524503
 GameObject:
   m_ObjectHideFlags: 0
@@ -8809,6 +8809,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4272299544976437238, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272299544976437238, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
       propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
@@ -8818,7 +8822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4272299544976437238, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
       propertyPath: m_GravityScale
-      value: 15
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5044643066943156978, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
       propertyPath: m_RootOrder
@@ -8890,14 +8894,14 @@ PrefabInstance:
       addedObject: {fileID: 884768534}
     - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 884768528}
-    - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 884768527}
-    - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 884768537}
     - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
       insertIndex: -1
       addedObject: {fileID: 884768536}
+    - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 884768528}
+    - targetCorrespondingSourceObject: {fileID: 5891746582074679657, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 884768527}
   m_SourcePrefab: {fileID: 100100000, guid: 409f94d7b0b11fd4f8886f42e7c46915, type: 3}

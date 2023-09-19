@@ -15,7 +15,7 @@ namespace NTC.Source.Code.Ecs
                 groundCheck.isGrounded =
                     Physics2D.OverlapCircle(groundCheck.groundCheckCircle.position, groundCheck.groundDistance,
                         groundCheck.groundMask);
-            }//groundCheck.groundCheckCircle.position
+            }
         }
     }
 }
