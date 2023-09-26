@@ -1,11 +1,10 @@
 {
   "dependencies": {
     "com.leopotam.ecs": {
-      "version": "https://github.com/Leopotam/ecs.git",
+      "version": "file:D:/дипломка игра/готовые работы/пакеты/ecs-master",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "1213c31c9ef8325d48e74a52b345c4db242d038b"
+      "source": "local",
+      "dependencies": {}
     },
     "com.unity.2d.animation": {
       "version": "9.0.2",
@@ -95,6 +94,15 @@
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.2.1"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.cinemachine": {
+      "version": "2.9.7",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.31"
       },
       "url": "https://packages.unity.com"
     },
@@ -213,11 +221,10 @@
       "url": "https://packages.unity.com"
     },
     "com.voody.unileo": {
-      "version": "https://github.com/voody2506/UniLeo.git",
+      "version": "file:D:/дипломка игра/готовые работы/пакеты/UniLeo-main",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "bbaed2aec8231b6e79369eecd5c3a9f3b80a97e2"
+      "source": "local",
+      "dependencies": {}
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
