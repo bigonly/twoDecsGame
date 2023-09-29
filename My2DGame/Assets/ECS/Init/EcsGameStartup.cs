@@ -31,6 +31,7 @@ namespace NTC.Source.Code.Ecs
         private void AddSystems()
         {
             systems
+                .Add(new LimitFPSSystem())
                 .Add(new PlayerJumpSendEventSystem())
                 .Add(new GravityCalculationSystem())
                 .Add(new GroundCheckSystem())
