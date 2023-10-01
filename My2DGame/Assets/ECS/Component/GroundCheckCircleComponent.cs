@@ -7,8 +7,9 @@ namespace NTC.Source.Code.Ecs
     public struct GroundCheckCircleComponent
     {
         public LayerMask groundMask;
-        public Transform groundCheckCircle;
-        public float groundDistance;
+        public Transform groundCheckPosition;
+        public float boxLenght;
+        public float boxHeight;
         public bool isGrounded;
     }
 }
