@@ -6,7 +6,7 @@ namespace NTC.Source.Code.Ecs
     sealed class GravityCalculationSystem : IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
-        private readonly EcsFilter<PlayerTag, MovableComponent, GroundCheckCircleComponent> gravityFilter = null;
+        private readonly EcsFilter<PlayerTag, MovableComponent, GroundCheckBoxComponent> gravityFilter = null;
         public void Run()
         {
             foreach (var i in gravityFilter)
