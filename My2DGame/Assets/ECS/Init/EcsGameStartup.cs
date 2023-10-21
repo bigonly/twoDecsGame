@@ -32,6 +32,8 @@ namespace NTC.Source.Code.Ecs
         {
             systems
                 .Add(new LimitFPSSystem())
+                .Add(new OneWayPlatfomAvailableSystem())
+                .Add(new PlayerOneWayPlatformSystem())
                 .Add(new PlayerJumpSendEventSystem())
                 .Add(new GravityCalculationSystem())
                 .Add(new GroundCheckSystem())
@@ -39,8 +41,6 @@ namespace NTC.Source.Code.Ecs
                 .Add(new PlayerJumpSystem())
                 .Add(new PlayerInputSystem())
                 .Add(new MovementSystem())
-                .Add(new PlayerOneWayPlatformSystem())
-                .Add(new OneWayPlatformSystem())
             ;
         }
         private void AddOneFrames()
