@@ -1,0 +1,2302 @@
+fileFormatVersion: 2
+guid: dbfc26a7b0a951f4488670923d6bd545
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838b85c1afb5a984bbd76c02a88b0602
+      internalID: 961396999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ddd8cf63f13aa4590a4638c3681c30
+      internalID: -765516075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec3b9765f2d2c64884e6522196ad673
+      internalID: 1219660758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89301fbe882a59749bb143108dbd9d0e
+      internalID: 1700675437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b943d30a3e0dd8b4884c935bdc90bc30
+      internalID: 1009235193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0c0739481f9104fbcf621ffa963bc3
+      internalID: 1867863069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811c9c39de6ecd44f9a2ad70cdffac34
+      internalID: -845140822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_7
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1f7c791f9ef8b47a4965120be206f9
+      internalID: -1181700009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e326c05b36bb314398fd51f586f8ee7
+      internalID: 132927944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_9
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97591bd5c4457734b98293a1248ac0b7
+      internalID: 876911668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_10
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32621a0a71fca5f4d918fa7a37c6c2f2
+      internalID: 973492442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_11
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f83c3c6b2d4c984f822bffc593862e3
+      internalID: -128027018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbe4c317f43ad54098dba50c3dd16ee
+      internalID: -1696282733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_13
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318dc7aac45ad244186378af1144fa2f
+      internalID: 1078208247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f24536a5fc206418402500eff0c023
+      internalID: -1879795881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_15
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5acfb472f2c5a094b8fa19896aa0bee1
+      internalID: -2031483905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_16
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13aa0877d8ddf45428763a344e12b05b
+      internalID: -934912402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_17
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538e307a165156b4695ed286a9158c44
+      internalID: 2081960020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8f45c70b31eb84b9936d6dc7c01f08
+      internalID: -1617411824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_19
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7204ccc263df69140a911ef3f2d908b6
+      internalID: -1660932710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a835d5f7d4ddc943911447af6a3259b
+      internalID: 263224637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55121bfba0ec4ae4fb0d9c4e002b0f93
+      internalID: 2109781152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e8d2349a632314f8f63e8814a4428a
+      internalID: -818784688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f37f66207d4a544a8137ab222ea5078
+      internalID: -1890150086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_24
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ee3d8d552414640af4aa11c4bba984
+      internalID: -552705871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_25
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11359fbc5ca8f914ba04fae8296e9f01
+      internalID: -1918092827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_26
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe64a9a3ac0b71649a20597b2070c4af
+      internalID: 788076366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_27
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beae1fb4a99d5541b9ca1b362785f65
+      internalID: -8776120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7caa687f0ab2a094d8eac460e48c362b
+      internalID: 1017250052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b66ce7d3e565f24385bb8a1ea90a641
+      internalID: -1053301046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_30
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7913299014bd044bb7d2f606752ed9
+      internalID: 131242756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca0b729fff371e48bf2da07a0651108
+      internalID: 1563222927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532449d6a13472849ab9b21caf117bf8
+      internalID: -1513849164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_33
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50594c6f21b6fde4ba7ca5a624290506
+      internalID: -1577884498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_34
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e896392d16189cb42b7695ab22c5835a
+      internalID: 1147222823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_35
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388f72009132fc14e88e95c6140ddfd7
+      internalID: 1011514569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bff2deca30472d439bc20d4b4ad18df
+      internalID: -809604020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5165f33a255acd140b41c01e5df62baf
+      internalID: 1264041406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_38
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6b45eea3d4d7d43bbc561b71fb27c0
+      internalID: -1902375713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629e56322799820459905ce41c9bfdcd
+      internalID: -1734496156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_40
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0442544ed97e72d4e9263f4d47abc1bc
+      internalID: 681724431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_41
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929fc198bde6d3d458b91d75fc5a19b8
+      internalID: 1699986072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_42
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a6d53464dd38b488230ea3bbd0a66c
+      internalID: 1501846344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee1a2fedf3392441bdb94a842728152
+      internalID: -358267286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bdac61cf552a9458f7e68d209c1cd0
+      internalID: 1323175808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5305f8555e35f745805ffdd187d21f5
+      internalID: 64321799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_46
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2de4d0a5f92af409f8ad67cc94de72
+      internalID: -1030807368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_47
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37368382967551e43b7a828ee0f6c8e3
+      internalID: 913042207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_48
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8259182595d9e6642854a2f681094ea1
+      internalID: 398899723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75422eee96305d540bdda66b553f27de
+      internalID: 359811959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_50
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4d5082726230541ac3a5105c058f10
+      internalID: -2088700653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_51
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39d3fada499c37459fe1e8e7fe0e231
+      internalID: 868015010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_52
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471dae4e9e60d06479d890d637ed8d1d
+      internalID: -733624363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_53
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f35e91d405cbe4d97f7681a9a8d55a
+      internalID: 2095892494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_54
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b417cf113c1584385fd0ccf42660c5
+      internalID: -1384286460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_55
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed2457d0aa903f4a85605177b02e1a0
+      internalID: -898511864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_56
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6207348f7ef674e8aec4345ac6f4f1
+      internalID: -1863017915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_57
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc1e52382baa32439463d3c3cfb5fde
+      internalID: -810327736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_58
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916ebd494f1c2464ba6fbbff4dd4bd12
+      internalID: -867898742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_59
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf39d9e5417a58b48b42c577ed3f05c5
+      internalID: 1617896606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_60
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a6b7653e9640640a2bf80cd5286732
+      internalID: 475440712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_61
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48228a8703edbc446966c4f6c3a4d323
+      internalID: 1228842118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_62
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50384ad111852dd46a5d4f5f36e4a146
+      internalID: -1297995043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df307b0df9e64941bfb501b9d4f5593
+      internalID: -507898310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_64
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a122a54aaab4ffd478e247a272dd265a
+      internalID: -566693324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_65
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7725209fb4a84634a988f709c31e2870
+      internalID: 246698414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_66
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81d466fe4a0a1c449ec901547f3041a
+      internalID: 1871940828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_67
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4570afe5a52bc4d47901bc0b898f14d1
+      internalID: 1560190917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_68
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e5ec982bac63c4c86767441e5e73c8
+      internalID: -1352021028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_69
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6cf990c95801cc4a98f3a3078ea3b5e
+      internalID: -1199588593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_70
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fe5a823c9d79b4aaa773a1bb8ec29d
+      internalID: -2028204225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_71
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f148c727639395344862c230a5f42ec2
+      internalID: -311465861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_72
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6b4066157608f4a8ab448fd859b291
+      internalID: 1989134485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_73
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a79b166d0805944abb2a7944cd4bbf2
+      internalID: -1722727094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_74
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a364129998732448b7c9c1813e1ac5a
+      internalID: -1759270904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_75
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd9605a23e579447afadbbb8e2b1431
+      internalID: 360590739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_76
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89bedb5277e1cd547ab87c4f121851ef
+      internalID: -956979851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_77
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b6a4723023c7c418e9d2e19e5d0997
+      internalID: 615566198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_78
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1e6879d7e549c498c3795c26235a1a
+      internalID: -832567869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_79
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6107f26ceba5241866dd0eb2ceeefd
+      internalID: 1033078564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_80
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269969c2271e83541a612e8af9bd92ba
+      internalID: -202403414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_81
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffc4b9bcdf41a3498f03aaa3ca2b3af
+      internalID: -938320553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_82
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72060ba3082a734a9859f55d517bb8d
+      internalID: 1618895768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_83
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e0f3d7314aa7149ae3a575fe9204ef
+      internalID: -177548856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4e2f9ec3f0b0c4fa805f47d029698e
+      internalID: 272095928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_85
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809411c4d05c6234f8d06418720cf2f7
+      internalID: -2132262799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_86
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68458563c6716cd499905df76bff8c3b
+      internalID: 744756593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_87
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e654345d2a4c5c4ca65277cb91dfcad
+      internalID: -1840408129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_88
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ad0d2783368c04eaeb47a3ed6abd90
+      internalID: 1518817983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_89
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8720a49921acc8843ab99fc3985d3946
+      internalID: -2106311516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_90
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13476ab8b0d7d874fab9fdfed8445730
+      internalID: 1948193936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_91
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4b9ca4cd6e4a44b90b6a52b844cdd1
+      internalID: -962583770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_92
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67877916fa840764b8ba792602ca32bb
+      internalID: 494546494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_93
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d82386c5b56db4682fb8c6df35904b
+      internalID: -531822907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_94
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6afac442fb3ed34e99d61b7a80bb80f
+      internalID: 1368864039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_95
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696653ce92fa8874b8bc8484a0c279a1
+      internalID: 459021898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_96
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b197939835c9e4895da2ebf0af1e3a
+      internalID: 1476054935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c618c9df4b425040adfab4848331681
+      internalID: -1650033149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATFORM_LEVEL3_autumn 1_98
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c79e160e57e10d4c815aafe2d4ce4c2
+      internalID: 1965934843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PLATFORM_LEVEL3_autumn 1_0: 961396999
+      PLATFORM_LEVEL3_autumn 1_1: -765516075
+      PLATFORM_LEVEL3_autumn 1_10: 973492442
+      PLATFORM_LEVEL3_autumn 1_11: -128027018
+      PLATFORM_LEVEL3_autumn 1_12: -1696282733
+      PLATFORM_LEVEL3_autumn 1_13: 1078208247
+      PLATFORM_LEVEL3_autumn 1_14: -1879795881
+      PLATFORM_LEVEL3_autumn 1_15: -2031483905
+      PLATFORM_LEVEL3_autumn 1_16: -934912402
+      PLATFORM_LEVEL3_autumn 1_17: 2081960020
+      PLATFORM_LEVEL3_autumn 1_18: -1617411824
+      PLATFORM_LEVEL3_autumn 1_19: -1660932710
+      PLATFORM_LEVEL3_autumn 1_2: 1219660758
+      PLATFORM_LEVEL3_autumn 1_20: 263224637
+      PLATFORM_LEVEL3_autumn 1_21: 2109781152
+      PLATFORM_LEVEL3_autumn 1_22: -818784688
+      PLATFORM_LEVEL3_autumn 1_23: -1890150086
+      PLATFORM_LEVEL3_autumn 1_24: -552705871
+      PLATFORM_LEVEL3_autumn 1_25: -1918092827
+      PLATFORM_LEVEL3_autumn 1_26: 788076366
+      PLATFORM_LEVEL3_autumn 1_27: -8776120
+      PLATFORM_LEVEL3_autumn 1_28: 1017250052
+      PLATFORM_LEVEL3_autumn 1_29: -1053301046
+      PLATFORM_LEVEL3_autumn 1_3: 1700675437
+      PLATFORM_LEVEL3_autumn 1_30: 131242756
+      PLATFORM_LEVEL3_autumn 1_31: 1563222927
+      PLATFORM_LEVEL3_autumn 1_32: -1513849164
+      PLATFORM_LEVEL3_autumn 1_33: -1577884498
+      PLATFORM_LEVEL3_autumn 1_34: 1147222823
+      PLATFORM_LEVEL3_autumn 1_35: 1011514569
+      PLATFORM_LEVEL3_autumn 1_36: -809604020
+      PLATFORM_LEVEL3_autumn 1_37: 1264041406
+      PLATFORM_LEVEL3_autumn 1_38: -1902375713
+      PLATFORM_LEVEL3_autumn 1_39: -1734496156
+      PLATFORM_LEVEL3_autumn 1_4: 1009235193
+      PLATFORM_LEVEL3_autumn 1_40: 681724431
+      PLATFORM_LEVEL3_autumn 1_41: 1699986072
+      PLATFORM_LEVEL3_autumn 1_42: 1501846344
+      PLATFORM_LEVEL3_autumn 1_43: -358267286
+      PLATFORM_LEVEL3_autumn 1_44: 1323175808
+      PLATFORM_LEVEL3_autumn 1_45: 64321799
+      PLATFORM_LEVEL3_autumn 1_46: -1030807368
+      PLATFORM_LEVEL3_autumn 1_47: 913042207
+      PLATFORM_LEVEL3_autumn 1_48: 398899723
+      PLATFORM_LEVEL3_autumn 1_49: 359811959
+      PLATFORM_LEVEL3_autumn 1_5: 1867863069
+      PLATFORM_LEVEL3_autumn 1_50: -2088700653
+      PLATFORM_LEVEL3_autumn 1_51: 868015010
+      PLATFORM_LEVEL3_autumn 1_52: -733624363
+      PLATFORM_LEVEL3_autumn 1_53: 2095892494
+      PLATFORM_LEVEL3_autumn 1_54: -1384286460
+      PLATFORM_LEVEL3_autumn 1_55: -898511864
+      PLATFORM_LEVEL3_autumn 1_56: -1863017915
+      PLATFORM_LEVEL3_autumn 1_57: -810327736
+      PLATFORM_LEVEL3_autumn 1_58: -867898742
+      PLATFORM_LEVEL3_autumn 1_59: 1617896606
+      PLATFORM_LEVEL3_autumn 1_6: -845140822
+      PLATFORM_LEVEL3_autumn 1_60: 475440712
+      PLATFORM_LEVEL3_autumn 1_61: 1228842118
+      PLATFORM_LEVEL3_autumn 1_62: -1297995043
+      PLATFORM_LEVEL3_autumn 1_63: -507898310
+      PLATFORM_LEVEL3_autumn 1_64: -566693324
+      PLATFORM_LEVEL3_autumn 1_65: 246698414
+      PLATFORM_LEVEL3_autumn 1_66: 1871940828
+      PLATFORM_LEVEL3_autumn 1_67: 1560190917
+      PLATFORM_LEVEL3_autumn 1_68: -1352021028
+      PLATFORM_LEVEL3_autumn 1_69: -1199588593
+      PLATFORM_LEVEL3_autumn 1_7: -1181700009
+      PLATFORM_LEVEL3_autumn 1_70: -2028204225
+      PLATFORM_LEVEL3_autumn 1_71: -311465861
+      PLATFORM_LEVEL3_autumn 1_72: 1989134485
+      PLATFORM_LEVEL3_autumn 1_73: -1722727094
+      PLATFORM_LEVEL3_autumn 1_74: -1759270904
+      PLATFORM_LEVEL3_autumn 1_75: 360590739
+      PLATFORM_LEVEL3_autumn 1_76: -956979851
+      PLATFORM_LEVEL3_autumn 1_77: 615566198
+      PLATFORM_LEVEL3_autumn 1_78: -832567869
+      PLATFORM_LEVEL3_autumn 1_79: 1033078564
+      PLATFORM_LEVEL3_autumn 1_8: 132927944
+      PLATFORM_LEVEL3_autumn 1_80: -202403414
+      PLATFORM_LEVEL3_autumn 1_81: -938320553
+      PLATFORM_LEVEL3_autumn 1_82: 1618895768
+      PLATFORM_LEVEL3_autumn 1_83: -177548856
+      PLATFORM_LEVEL3_autumn 1_84: 272095928
+      PLATFORM_LEVEL3_autumn 1_85: -2132262799
+      PLATFORM_LEVEL3_autumn 1_86: 744756593
+      PLATFORM_LEVEL3_autumn 1_87: -1840408129
+      PLATFORM_LEVEL3_autumn 1_88: 1518817983
+      PLATFORM_LEVEL3_autumn 1_89: -2106311516
+      PLATFORM_LEVEL3_autumn 1_9: 876911668
+      PLATFORM_LEVEL3_autumn 1_90: 1948193936
+      PLATFORM_LEVEL3_autumn 1_91: -962583770
+      PLATFORM_LEVEL3_autumn 1_92: 494546494
+      PLATFORM_LEVEL3_autumn 1_93: -531822907
+      PLATFORM_LEVEL3_autumn 1_94: 1368864039
+      PLATFORM_LEVEL3_autumn 1_95: 459021898
+      PLATFORM_LEVEL3_autumn 1_96: 1476054935
+      PLATFORM_LEVEL3_autumn 1_97: -1650033149
+      PLATFORM_LEVEL3_autumn 1_98: 1965934843
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

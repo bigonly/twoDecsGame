@@ -32,6 +32,8 @@ namespace NTC.Source.Code.Ecs
         {
             systems
                 .Add(new LimitFPSSystem())
+                .Add(new InitSavedPlayerPositionSystem())
+                .Add(new SavePlayerPositionSystem())
                 .Add(new OneWayPlatfomAvailableSystem())
                 .Add(new PlayerOneWayPlatformSystem())
                 .Add(new PlayerJumpSendEventSystem())
