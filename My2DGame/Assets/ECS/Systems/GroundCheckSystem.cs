@@ -15,7 +15,7 @@ namespace NTC.Source.Code.Ecs
 
                 groundCheckBoxComponent.isGrounded =
                     Physics2D.OverlapBox(groundCheckBoxComponent.groundCheckPosition.position, 
-                    new Vector2(groundCheckBoxComponent.boxLenght, groundCheckBoxComponent.boxHeight),
+                    new Vector2(groundCheckBoxComponent.boxLenght_X, groundCheckBoxComponent.boxHeight_Y),
                     0, groundCheckBoxComponent.groundMask);
                 
             }

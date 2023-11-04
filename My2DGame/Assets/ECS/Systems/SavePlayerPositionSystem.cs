@@ -13,7 +13,6 @@ namespace NTC.Source.Code.Ecs
                 ref var entity = ref positionFilter.GetEntity(i);
                 ref var playerPosition = ref positionFilter.Get1(i);
                 ref var playerPositionData = ref positionFilter.Get2(i);
-                Debug.Log("It's run");
                 if (playerPosition.playerEntered)
                     playerPositionData.playerPositionData.savePlayerPosition = true;
                 

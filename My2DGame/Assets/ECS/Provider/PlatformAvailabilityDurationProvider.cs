@@ -2,7 +2,7 @@
 
 namespace NTC.Source.Code.Ecs
 {
-    public class PlatformAvailabilityDurationProvider : MonoProvider<PlatformAvailabilityDuration>
+    public class PlatformAvailabilityDurationProvider : MonoProvider<PlatformAvailabilityDurationComponent>
     {
 
     }

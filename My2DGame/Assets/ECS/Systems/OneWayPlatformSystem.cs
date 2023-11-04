@@ -16,7 +16,6 @@ namespace NTC.Source.Code.Ecs
 
                 ref var currentOneWayPlatform = ref oneWayPlatformComponent.currentOneWayPlatform;
                 ref var currentOneWayPlatformCollider = ref oneWayPlatformComponent.boxCollider2D;
-                //Debug.Log(currentOneWayPlatform);
 
             }
         }

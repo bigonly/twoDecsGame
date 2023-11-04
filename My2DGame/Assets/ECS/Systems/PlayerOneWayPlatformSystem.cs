@@ -11,7 +11,7 @@ namespace NTC.Source.Code.Ecs
     {
         private readonly EcsWorld _world = null;
         private readonly
-            EcsFilter<PlayerTag, PlayerOneWayPlatformComponent, OneWayPlatformComponent, PlatformAvailabilityDuration> playerOneWayPlatformFilter = null;
+            EcsFilter<PlayerTag, PlayerOneWayPlatformComponent, OneWayPlatformComponent, PlatformAvailabilityDurationComponent> playerOneWayPlatformFilter = null;
         public void Run()
         {
             foreach (var i in playerOneWayPlatformFilter)
@@ -27,7 +27,7 @@ namespace NTC.Source.Code.Ecs
 
                 if (Input.GetKey(KeyCode.S))
                 {
-                    entity.Get<PlatformAvailabilityDuration>().IsDelayFinished = false;
+                    entity.Get<PlatformAvailabilityDurationComponent>().IsDelayFinished = false;
                     if (currentOneWayPlatform != null && !delay.IsDelayFinished)
                     {
                         Physics2D.IgnoreCollision(playerCollider, currentOneWayPlatformCollider);
@@ -36,8 +36,8 @@ namespace NTC.Source.Code.Ecs
                 if (currentOneWayPlatform == null && delay.IsDelayFinished)
                 {
                     Physics2D.IgnoreCollision(playerCollider, currentOneWayPlatformCollider, false);
-                    entity.Get<PlatformAvailabilityDuration>().Timer = 0;
-                    entity.Get<PlatformAvailabilityDuration>().DelayDuration = 1f;
+                    entity.Get<PlatformAvailabilityDurationComponent>().Timer = 0;
+                    entity.Get<PlatformAvailabilityDurationComponent>().DelayDuration = 1f;
                 }
             }
         }

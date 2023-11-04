@@ -18,7 +18,6 @@ namespace NTC.Source.Code.Ecs
                 ref var isGrounded = ref groundCheckBoxComponent.isGrounded;
 
                 if (Input.GetKeyDown(KeyCode.Space)) --jumpCount;
-                //Debug.Log(jumpCount);
                 if (isGrounded) entity.Get<MultiJumpComponent>().jumpCount = multiJumpComponent.saveJumpCount;
             }
         }

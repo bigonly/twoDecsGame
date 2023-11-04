@@ -8,8 +8,8 @@ namespace NTC.Source.Code.Ecs
     {
         public LayerMask groundMask;
         public Transform groundCheckPosition;
-        public float boxLenght;
-        public float boxHeight;
+        public float boxLenght_X;
+        public float boxHeight_Y;
         public bool isGrounded;
     }
 }

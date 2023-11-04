@@ -5,7 +5,7 @@ namespace NTC.Source.Code.Ecs
 {
     sealed class OneWayPlatfomAvailableSystem : IEcsRunSystem
     {
-        private readonly EcsFilter<PlatformAvailabilityDuration> platfomFilter = null;
+        private readonly EcsFilter<PlatformAvailabilityDurationComponent> platfomFilter = null;
         public void Run()
         {
             foreach (var i in platfomFilter)

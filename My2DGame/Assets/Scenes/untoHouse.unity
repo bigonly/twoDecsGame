@@ -12109,8 +12109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 1001553613}
-  boxLenght: 0.5
-  boxHeight: 0.1
+  boxLenght_X: 0.5
+  boxHeight_Y: 0.1
 --- !u!4 &1661067804
 Transform:
   m_ObjectHideFlags: 0
@@ -13133,8 +13133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1971665868}
   - component: {fileID: 1971665870}
-  - component: {fileID: 1971665869}
   - component: {fileID: 1971665871}
+  - component: {fileID: 1971665872}
+  - component: {fileID: 1971665873}
   m_Layer: 0
   m_Name: Door Position
   m_TagString: Untagged
@@ -13157,18 +13158,6 @@ Transform:
   m_Father: {fileID: 275706307}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1971665869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971665867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d3456b0e1d64647b2b0725c317b870, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1971665870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13182,8 +13171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 1971665868}
-  boxLenght: 3
-  boxHeight: 3
+  boxLenght_X: 0
+  boxHeight_Y: 0
 --- !u!61 &1971665871
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13229,6 +13218,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &1971665872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971665867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ef7d86c1cca5447b0ff3b6482cf1ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transform: {fileID: 1971665868}
+  boxLenght_X: 0
+  boxHeight_Y: 0
+--- !u!114 &1971665873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971665867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d3456b0e1d64647b2b0725c317b870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1974362791
 GameObject:
   m_ObjectHideFlags: 0
@@ -13543,8 +13559,8 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 512
     groundCheckPosition: {fileID: 1001553613}
-    boxLenght: 0.5
-    boxHeight: 0.1
+    boxLenght_X: 0.5
+    boxHeight_Y: 0.1
     isGrounded: 0
 --- !u!114 &2026128920
 MonoBehaviour:

@@ -3,7 +3,7 @@
 namespace NTC.Source.Code.Ecs
 {
     [Serializable]
-    public struct PlatformAvailabilityDuration
+    public struct PlatformAvailabilityDurationComponent
     {
         public float DelayDuration;
         public float Timer;
