@@ -1,8 +1,4 @@
 ﻿using Leopotam.Ecs;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Threading;
 using UnityEngine;
 
 namespace NTC.Source.Code.Ecs

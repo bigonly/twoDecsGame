@@ -17,7 +17,6 @@ namespace NTC.Source.Code.Ecs
                     Physics2D.OverlapBox(groundCheckBoxComponent.groundCheckPosition.position, 
                     new Vector2(groundCheckBoxComponent.boxLenght_X, groundCheckBoxComponent.boxHeight_Y),
                     0, groundCheckBoxComponent.groundMask);
-                
             }
         }
     }
