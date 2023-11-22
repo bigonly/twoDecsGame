@@ -3098,7 +3098,7 @@ GameObject:
   - component: {fileID: 804335348}
   - component: {fileID: 804335351}
   - component: {fileID: 804335349}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: TilemapCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5616,7 +5616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 981240329}
   - component: {fileID: 981240330}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: colider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14475,7 +14475,7 @@ MonoBehaviour:
   value:
     groundMask:
       serializedVersion: 2
-      m_Bits: 512
+      m_Bits: 64
     groundCheckPosition: {fileID: 479562995}
     boxLenght_X: 0.5
     boxHeight_Y: 0.1
@@ -14529,7 +14529,7 @@ MonoBehaviour:
   checkRadius: 0.1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 64
 --- !u!114 &8498710628763909021
 MonoBehaviour:
   m_ObjectHideFlags: 0
