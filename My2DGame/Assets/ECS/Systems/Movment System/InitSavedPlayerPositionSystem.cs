@@ -1,9 +1,8 @@
 ﻿using Leopotam.Ecs;
-using UnityEngine;
 
 namespace NTC.Source.Code.Ecs
 {
-    sealed class InitSavedPlayerPositionSystem : IEcsInitSystem//, IEcsRunSystem
+    sealed class InitSavedPlayerPositionSystem : IEcsInitSystem
     {
         private readonly EcsFilter<PlayerPositionDataComponent> positionFilter = null;
         public void Init()

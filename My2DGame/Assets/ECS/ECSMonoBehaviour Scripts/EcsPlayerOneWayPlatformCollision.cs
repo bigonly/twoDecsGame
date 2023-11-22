@@ -23,14 +23,5 @@ namespace NTC.Source.Code.Ecs
             
             playerEntity.Get<OneWayPlatformComponent>().currentOneWayPlatform = null;
         }
-        /**private IEnumerator DisableCollision()
-        {
-            BoxCollider2D platformCollider = currentOneWayPlatform.GetComponent<BoxCollider2D>();
-            //var playerCollider = GetComponent<PlayerOneWayPlatformComponent>().playerCollider;
-
-            Physics2D.IgnoreCollision(playerCollider, platformCollider);
-            yield return new WaitForSeconds(0.25f);
-            Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
-        }**/
     }
 }
