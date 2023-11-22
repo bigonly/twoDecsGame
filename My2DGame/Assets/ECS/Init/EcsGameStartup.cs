@@ -43,6 +43,8 @@ namespace NTC.Source.Code.Ecs
                 .Add(new PlayerJumpSystem())
                 .Add(new PlayerInputSystem())
                 .Add(new MovementSystem())
+                .Add(new HealthInitSystem())
+                .Add(new DamageSystem())
             ;
         }
         private void AddOneFrames()

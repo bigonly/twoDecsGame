@@ -1,4 +1,5 @@
-﻿using Voody.UniLeo;
+﻿using System;
+using Voody.UniLeo;
 
 namespace NTC.Source.Code.Ecs
 {
