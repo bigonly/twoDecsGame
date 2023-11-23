@@ -4,7 +4,7 @@ using Voody.UniLeo;
 
 namespace NTC.Source.Code.Ecs
 {
-    public class TriggerDamage : MonoBehaviour
+    public class EnemyDamageTrigger : MonoBehaviour
     {
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -15,9 +15,7 @@ namespace NTC.Source.Code.Ecs
             var enemyEntity =
                 WorldHandler.GetWorld().GetFilter(typeof(EcsFilter<EnemyTag>)).GetEntity(0);
 
-            playerEntity.Get<DamageComponent>().Damage = enemyEntity.Get<DamageComponent>().Damage;
-
-            //Debug.Log("Hit");
+            playerEntity.Get<HealthComponent>().currentHealth -= enemyEntity.Get<DamageComponent>().Damage;
         }
     }
 }

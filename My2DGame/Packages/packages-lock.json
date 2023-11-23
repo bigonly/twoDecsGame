@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.leopotam.ecs": {
-      "version": "file:D:/дипломка игра/готовые работы/пакеты/ecs-master",
+      "version": "file:C:/Users/user/Downloads/ecs-master",
       "depth": 0,
       "source": "local",
       "dependencies": {}
@@ -221,7 +221,7 @@
       "url": "https://packages.unity.com"
     },
     "com.voody.unileo": {
-      "version": "file:D:/дипломка игра/готовые работы/пакеты/UniLeo-main",
+      "version": "file:C:/Users/user/Downloads/UniLeo-main",
       "depth": 0,
       "source": "local",
       "dependencies": {}

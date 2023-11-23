@@ -16,11 +16,12 @@ namespace NTC.Source.Code.Ecs
                 ref var healthComponent = ref damageFilter.Get1(i);
                 Debug.Log("Form Run: " + healthComponent.currentHealth);
 
-                healthComponent.currentHealth -= damageComponent.Damage;
+                //healthComponent.currentHealth -= damageComponent.Damage;
 
                 if (healthComponent.currentHealth <= 0)
                 {
                     Debug.Log("You are Dead");
+                    entity.Del<HealthComponent>();
                 }
                 entity.Del<DamageComponent>();
             }
