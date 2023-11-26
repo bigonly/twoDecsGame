@@ -32,7 +32,7 @@ namespace NTC.Source.Code.Ecs
         {
             systems
                 .Add(new LimitFPSSystem())
-                .Add(new PlayerInitSystem())
+                .Add(new EnemyInitSystem())
                 .Add(new InitSavedPlayerPositionSystem())
                 .Add(new SavePlayerPositionSystem())
                 .Add(new OneWayPlatfomAvailableSystem())
@@ -45,7 +45,7 @@ namespace NTC.Source.Code.Ecs
                 .Add(new PlayerInputSystem())
                 .Add(new MovementSystem())
                 .Add(new HealthInitSystem())
-                .Add(new DamageSystem())
+                //.Add(new DamageSystem())
             ;
         }
         private void AddOneFrames()

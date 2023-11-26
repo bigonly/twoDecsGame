@@ -19,7 +19,6 @@ namespace NTC.Source.Code.Ecs
 
             var weaponEntity = _world.NewEntity();
             var weaponView = playerGO.GetComponentInChildren<WeaponSettings>();
-            ref var weapon = ref weaponEntity.Get<Weapon>();
 
         }
     }
