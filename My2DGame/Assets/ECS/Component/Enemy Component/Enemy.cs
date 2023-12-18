@@ -1,5 +1,4 @@
-﻿using UnityEngine.AI;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace NTC.Source.Code.Ecs
 {
@@ -9,6 +8,6 @@ namespace NTC.Source.Code.Ecs
         public float meleeAttackDistance;
         public float triggerDistance;
         public float meleeAttackInterval;
-        public int damage;
+        public float damage;
     }
 }

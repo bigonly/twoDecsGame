@@ -2,11 +2,13 @@ using System;
 using UnityEngine;
 using Leopotam.Ecs;
 using Voody.UniLeo;
+using Zenject;
 
 namespace NTC.Source.Code.Ecs
 {
     public sealed class EcsGameStartup : MonoBehaviour
     {
+        public SceneData sceneData;
         private EcsWorld world;
         private EcsSystems systems;
 
@@ -26,14 +28,15 @@ namespace NTC.Source.Code.Ecs
 
         private void AddInjections()
         {
-
+            systems.Inject(sceneData);
         }
         private void AddSystems()
         {
             systems
                 .Add(new LimitFPSSystem())
                 .Add(new EnemyInitSystem())
-                .Add(new InitSavedPlayerPositionSystem())
+                .Add(new PlayerInitSystem())
+                //.Add(new InitSavedPlayerPositionSystem())
                 .Add(new SavePlayerPositionSystem())
                 .Add(new OneWayPlatfomAvailableSystem())
                 .Add(new PlayerOneWayPlatformSystem())
@@ -45,13 +48,19 @@ namespace NTC.Source.Code.Ecs
                 .Add(new PlayerInputSystem())
                 .Add(new MovementSystem())
                 .Add(new HealthInitSystem())
+                .Add(new WeaponShootSystem())
+                .Add(new SpawnProjectileSystem())
+                .Add(new ProjectileMoveSystem())
+                .Add(new ProjectileHitSystem())
+                .Add(new ReloadSystem())
                 //.Add(new DamageSystem())
             ;
         }
         private void AddOneFrames()
         {
             systems
-                .OneFrame<JumpEvent>();
+                .OneFrame<JumpEvent>()
+                .OneFrame<TryReload>();
         }
 
         private void Update()

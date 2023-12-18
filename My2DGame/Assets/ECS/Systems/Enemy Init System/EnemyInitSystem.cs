@@ -8,16 +8,16 @@ namespace NTC.Source.Code.Ecs
         private readonly EcsWorld _world = null;
         public void Init()
         {
-            foreach (var i in Object.FindObjectsOfType<EnemyView>())
+            foreach (var enemyView in Object.FindObjectsOfType<EnemyView>())
             {
                 var enemyEntity = _world.NewEntity();
 
                 ref var enemy = ref enemyEntity.Get<Enemy>();
                 ref var health = ref enemyEntity.Get<HealthComponent>();
 
-                health.maxHealth = i.startHealth;
-                enemy.damage = i.damage;
-                enemy.transform = i.transform;
+                health.maxHealth = enemyView.startHealth;
+                enemy.damage = enemyView.damage;
+                enemy.transform = enemyView.transform;
             }
         }
     }
