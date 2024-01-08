@@ -2044,7 +2044,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294655596690802981, guid: b4ed563a82660e94e9da2021619e4cc5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2060,7 +2061,6 @@ GameObject:
   - component: {fileID: 456239308}
   - component: {fileID: 456239311}
   - component: {fileID: 456239310}
-  - component: {fileID: 456239312}
   m_Layer: 0
   m_Name: Clear Damage
   m_TagString: Untagged
@@ -2180,18 +2180,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &456239312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456239307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69f74f9fe8546a4f9c0089ed351486c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &463159217
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,7 +2565,6 @@ GameObject:
   - component: {fileID: 666457277}
   - component: {fileID: 666457279}
   - component: {fileID: 666457280}
-  - component: {fileID: 666457281}
   m_Layer: 0
   m_Name: Tick Damage
   m_TagString: Untagged
@@ -2697,18 +2684,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &666457281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 666457276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93213d4fcf917a34da072c17efc7ab5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &738925094
 GameObject:
   m_ObjectHideFlags: 0
@@ -7284,7 +7259,6 @@ GameObject:
   - component: {fileID: 1314742662}
   - component: {fileID: 1314742661}
   - component: {fileID: 1314742660}
-  - component: {fileID: 1314742663}
   - component: {fileID: 1314742665}
   - component: {fileID: 1314742664}
   m_Layer: 0
@@ -7423,23 +7397,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1314742663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314742654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fea250e7c9063d41a8c66fa67a503b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meleeAttackDistance: 0
-  triggerDistance: 0
-  meleeAttackInterval: 0
-  startHealth: 300
-  damage: 50
 --- !u!114 &1314742664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11474,7 +11431,6 @@ GameObject:
   - component: {fileID: 1364293880}
   - component: {fileID: 1364293882}
   - component: {fileID: 1364293883}
-  - component: {fileID: 1364293884}
   m_Layer: 0
   m_Name: Clear Damage
   m_TagString: Untagged
@@ -11594,18 +11550,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1364293884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1364293879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93213d4fcf917a34da072c17efc7ab5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1403966197
 GameObject:
   m_ObjectHideFlags: 0
