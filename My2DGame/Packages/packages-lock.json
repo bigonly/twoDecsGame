@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.leopotam.ecs": {
-      "version": "file:D:/GameDev/_GitPackages/ecs-master",
+      "version": "file:C:/GameDev/customPackage/ecs-master",
       "depth": 0,
       "source": "local",
       "dependencies": {}
@@ -221,7 +221,7 @@
       "url": "https://packages.unity.com"
     },
     "com.voody.unileo": {
-      "version": "file:D:/GameDev/_GitPackages/UniLeo-main",
+      "version": "file:C:/GameDev/customPackage/UniLeo-main",
       "depth": 0,
       "source": "local",
       "dependencies": {}

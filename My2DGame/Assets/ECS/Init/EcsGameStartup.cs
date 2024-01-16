@@ -43,8 +43,9 @@ namespace NTC.Source.Code.Ecs
                 .Add(new GroundCheckSystem())
                 .Add(new MultiJumpCountSystem())
                 .Add(new PlayerJumpSystem())
-                .Add(new PlayerInputSystem())
+                .Add(new PlayerKeyboardInputSystem())
                 .Add(new MovementSystem())
+                .Add(new PlayerMouseInputSystem())
                 .Add(new HealthInitSystem())
             ;
         }

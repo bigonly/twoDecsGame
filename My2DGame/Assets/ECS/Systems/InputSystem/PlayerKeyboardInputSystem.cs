@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace NTC.Source.Code.Ecs
 {
-    sealed class PlayerInputSystem : IEcsRunSystem
+    sealed class PlayerKeyboardInputSystem : IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
         private readonly EcsFilter<PlayerTag, DirectionComponent> directionFilter = null;
