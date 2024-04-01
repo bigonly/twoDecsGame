@@ -6,6 +6,12 @@
       "source": "local",
       "dependencies": {}
     },
+    "com.leopotam.ecs-unityintegration": {
+      "version": "file:C:/Users/lenak/Downloads/ecs-unityintegration-master/ecs-unityintegration-master",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.2d.animation": {
       "version": "9.0.2",
       "depth": 1,

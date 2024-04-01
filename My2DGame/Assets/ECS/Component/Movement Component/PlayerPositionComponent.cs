@@ -1,10 +1,7 @@
 ﻿using System;
 
-namespace NTC.Source.Code.Ecs
+[Serializable]
+public struct PlayerPositionComponent
 {
-    [Serializable]
-    public struct PlayerPositionComponent
-    {
-        public bool playerEntered;
-    }
+    public bool playerEntered;
 }

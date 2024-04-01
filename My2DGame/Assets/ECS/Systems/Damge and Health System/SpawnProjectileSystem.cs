@@ -1,36 +1,36 @@
 ﻿using UnityEngine;
 using Leopotam.Ecs;
 
-namespace NTC.Source.Code.Ecs
+
+public class SpawnProjectileSystem : IEcsRunSystem
 {
-    public class SpawnProjectileSystem : IEcsRunSystem
+    private readonly EcsFilter<Weapon, SpawnProjectile> filter;
+    private EcsWorld ecsWorld;
+        
+    public void Run()
     {
-        private readonly EcsFilter<Weapon, SpawnProjectile> filter = null;
-        private EcsWorld ecsWorld;
-        public void Run()
+        foreach (var i in filter)
         {
-            foreach (var i in filter)
-            {
-                ref var weapon = ref filter.Get1(i);
+            //Debug.Log("Spawn Projectile");
 
-                var projectileGameObject = Object.Instantiate(
-                    weapon.projectilePrefab, 
-                    weapon.projectileSocket.position,
-                    Quaternion.identity);
-                var projectileEntity = ecsWorld.NewEntity();
+            ref var weapon = ref filter.Get1(i);
+            
+            Debug.Log(weapon.projectilePrefab);
+            var projectileGO = Object.Instantiate(weapon.projectilePrefab,weapon.projectileSocket.position, Quaternion.identity); 
+            // weapon.projectileSocket.rotation
+            var projectileEntity = ecsWorld.NewEntity();  
+                
+            ref var projectile = ref projectileEntity.Get<Projectile>();
 
-                ref var projectile = ref projectileEntity.Get<Projectile>();
+            projectile.damage = weapon.weaponDamage;
+            projectile.direction = weapon.projectileSocket.forward;
+            projectile.radius = weapon.projectileRadius;
+            projectile.speed = weapon.projectileSpeed;
+            projectile.previousPos = projectileGO.transform.position;
+            projectile.projectileGameObject = projectileGO;
 
-                projectile.damage = weapon.weaponDamage;
-                projectile.direction = weapon.projectileSocket.forward;
-                projectile.radius = weapon.projectileRadius;
-                projectile.speed = weapon.projectileSpeed;
-                projectile.previousPos = projectileGameObject.transform.position;
-                projectile.projectileGameObject = projectileGameObject;
-
-                ref var entity = ref filter.GetEntity(i);
-                entity.Del<SpawnProjectile>();
-            }
+            ref var entity = ref filter.GetEntity(i);
+            entity.Del<SpawnProjectile>();
         }
     }
 }

@@ -1,12 +1,9 @@
 ﻿using System;
 
-namespace NTC.Source.Code.Ecs
+[Serializable]
+public struct PlatformAvailabilityDurationComponent
 {
-    [Serializable]
-    public struct PlatformAvailabilityDurationComponent
-    {
-        public float DelayDuration;
-        public float Timer;
-        public bool IsDelayFinished;
-    }
+    public float DelayDuration;
+    public float Timer;
+    public bool IsDelayFinished;
 }

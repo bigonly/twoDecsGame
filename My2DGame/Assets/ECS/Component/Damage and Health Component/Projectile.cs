@@ -1,14 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
-namespace NTC.Source.Code.Ecs
+
+[Serializable]
+public struct Projectile
 {
-    public struct Projectile
-    {
-        public Vector3 direction;
-        public Vector3 previousPos;
-        public GameObject projectileGameObject;
-        public float speed;
-        public float radius;
-        public int damage;
-    }
+    public Vector3 direction;
+    public Vector3 previousPos;
+    public GameObject projectileGameObject;
+    public float speed;
+    public float radius;
+    public int damage;
 }

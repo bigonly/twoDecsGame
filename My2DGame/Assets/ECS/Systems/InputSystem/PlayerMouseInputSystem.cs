@@ -1,29 +1,21 @@
 ﻿using Leopotam.Ecs;
 using UnityEngine;
 
-namespace NTC.Source.Code.Ecs
-{
-    sealed class PlayerMouseInputSystem : IEcsRunSystem
-    {
-        private readonly EcsWorld _world = null;
-        private readonly EcsFilter<PlayerTag, ShootComponent> filter = null;
-        private bool leftMouseButton;
-        public void Run()
-        {
-            ClickMouse();
 
-            foreach (var i in filter)
-            {
-                ref var shootComponent = ref filter.Get2(i);
-                shootComponent.shootInput = leftMouseButton;
-            }
-        }
-        private void ClickMouse()
+sealed class PlayerMouseInputSystem : IEcsRunSystem
+{
+    private readonly EcsFilter<MouseComponent, HasWeapon> inputFilter = null;
+    public void Run()
+    {
+        //Debug.Log("Input System Works Ран");
+        foreach (var i in inputFilter)
         {
-            if (Input.GetKey(KeyCode.Mouse0))
-            {
-                Debug.Log("isShooting");
-            }
+            ref var entity = ref inputFilter.GetEntity(i);
+            ref var shootComponent = ref inputFilter.Get1(i);
+            //ref var hasWeapon = ref filter.Get1(i);
+            //ref var shootComponent = ref entity.Get<PlayerInputData>();
+            Debug.Log(shootComponent.leftMouseButton);
+            shootComponent.leftMouseButton = Input.GetMouseButton(0);
         }
     }
 }

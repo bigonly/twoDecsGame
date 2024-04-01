@@ -1,6 +1,3 @@
 ﻿using Voody.UniLeo;
 
-namespace NTC.Source.Code.Ecs
-{
-    public class DamageTagProvider : MonoProvider<DamageTag> { }
-}
+public class DamageTagProvider : MonoProvider<DamageTag> { }
