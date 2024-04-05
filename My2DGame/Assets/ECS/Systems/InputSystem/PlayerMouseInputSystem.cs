@@ -2,9 +2,10 @@
 using UnityEngine;
 
 
-sealed class PlayerMouseInputSystem : IEcsRunSystem
+public class PlayerMouseInputSystem : IEcsRunSystem
 {
-    private readonly EcsFilter<MouseComponent, HasWeapon> inputFilter = null;
+    private EcsFilter<MouseComponent, HasWeapon> inputFilter;
+    private EcsWorld ecsWorld;
     public void Run()
     {
         //Debug.Log("Input System Works Ран");
@@ -12,10 +13,9 @@ sealed class PlayerMouseInputSystem : IEcsRunSystem
         {
             ref var entity = ref inputFilter.GetEntity(i);
             ref var shootComponent = ref inputFilter.Get1(i);
-            //ref var hasWeapon = ref filter.Get1(i);
-            //ref var shootComponent = ref entity.Get<PlayerInputData>();
-            Debug.Log(shootComponent.leftMouseButton);
+            ref var hasWeapon = ref inputFilter.Get2(i);
             shootComponent.leftMouseButton = Input.GetMouseButton(0);
+            //Debug.Log(shootComponent.leftMouseButton);
         }
     }
 }

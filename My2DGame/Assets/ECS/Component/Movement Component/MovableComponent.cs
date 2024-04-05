@@ -1,7 +1,6 @@
 ﻿using System;
 using UnityEngine;
 
-[Serializable]
 public struct MovableComponent
 {
     public Rigidbody2D rigidbody2D;

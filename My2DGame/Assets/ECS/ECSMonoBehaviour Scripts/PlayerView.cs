@@ -8,5 +8,6 @@ public class PlayerView : MonoBehaviour
     public void Shoot()
     {
         entity.Get<HasWeapon>().weapon.Get<Shoot>();
+        Debug.Log("PlayerView");
     }
 }

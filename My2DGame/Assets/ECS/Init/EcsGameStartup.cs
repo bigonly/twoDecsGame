@@ -1,9 +1,8 @@
 using UnityEngine;
 using Leopotam.Ecs;
-using Voody.UniLeo;
 
 
-public sealed class EcsGameStartup : MonoBehaviour
+public class EcsGameStartup : MonoBehaviour
 {
     public StaticData configuration;
     public SceneData sceneData;
@@ -21,46 +20,34 @@ public sealed class EcsGameStartup : MonoBehaviour
         Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create (systems);
 #endif                
         systems
-            .ConvertScene()
             .Add(new LimitFPSSystem())
             .Add(new PlayerInitSystem())
             .Add(new HealthInitSystem())
+            .Add(new PlayerMouseInputSystem())
             //.Add(new InitSavedPlayerPositionSystem())
             //.Add(new SavePlayerPositionSystem())
-            .Add(new OneWayPlatfomAvailableSystem())
-            .Add(new PlayerOneWayPlatformSystem())
+            //.Add(new OneWayPlatfomAvailableSystem())
+            //.Add(new PlayerOneWayPlatformSystem())
+            .OneFrame<JumpEvent>()
+            .Add(new PlayerAnimationSystem())
             .Add(new PlayerJumpSendEventSystem())
             .Add(new GravityCalculationSystem())
             .Add(new GroundCheckSystem())
             .Add(new MultiJumpCountSystem())
             .Add(new PlayerJumpSystem())
-            .Add(new MovementSystem())
             .Add(new PlayerKeyboardInputSystem())
-            .Add(new PlayerMouseInputSystem())
+            .Add(new MovementSystem())
             .Add(new WeaponShootSystem())
             .Add(new SpawnProjectileSystem())
             //.Add(new ProjectileMoveSystem())
-            .Inject(runtimeData);
-        ;
-
-        AddInjections();
-        AddOneFrames();
-        //AddSystems();
-
-        systems.Init();
-    }
-
-    private void AddInjections()
-    {
-        systems
             .Inject(configuration)
-            .Inject(sceneData);
-    }
-    private void AddOneFrames()
-    {
-        systems
-            .OneFrame<JumpEvent>()
-            ;
+            .Inject(sceneData)
+            .Inject(runtimeData);
+            
+            systems.Init();
+        //AddInjections();
+        //AddOneFrames();
+        //AddSystems();
     }
 
     private void Update()
@@ -70,11 +57,7 @@ public sealed class EcsGameStartup : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (systems == null) return;
-
-        systems.Destroy();
-        systems = null;
         world.Destroy();
-        world = null;
+        systems.Destroy();
     }
 }
