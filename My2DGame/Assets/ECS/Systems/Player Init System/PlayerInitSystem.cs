@@ -16,13 +16,13 @@ sealed class PlayerInitSystem : IEcsInitSystem
         ref var mouseinputComponent = ref playerEntity.Get<MouseComponent>();
         ref var hasWeapon = ref playerEntity.Get<HasWeapon>();
         ref var animationRef = ref playerEntity.Get<AnimationRef>();
+        ref var transformRef = ref playerEntity.Get<TransformRef>();
         ref var directionComponent = ref playerEntity.Get<DirectionComponent>();
         ref var jumpCount = ref playerEntity.Get<MultiJumpComponent>();
         ref var jumpComponent = ref playerEntity.Get<JumpComponent>();
         ref var groundCheckBoxComponent = ref playerEntity.Get<GroundCheckBoxComponent>();
-        ref var transformRef = ref playerEntity.Get<TransformRef>();
             
-        GameObject playerGameObject = Object.Instantiate(
+        GameObject playerGameObject = Object.Instantiate(   
             staticData.playerPrefab,
             sceneData.playerSpawnPoint.position,
             Quaternion.identity);
@@ -32,6 +32,20 @@ sealed class PlayerInitSystem : IEcsInitSystem
         player.rigidbody2D = playerGameObject.GetComponent<Rigidbody2D>();
         player.speed = staticData.playerSpeed;
         player.gravity = staticData.gravity;
+
+        var weaponEntity = ecsWorld.NewEntity();
+        var weaponView = playerGameObject.GetComponentInChildren<WeaponSettings>();
+        ref var weapon = ref weaponEntity.Get<Weapon>();
+        weapon.owner = playerEntity;
+        weapon.projectilePrefab = weaponView.projectilePrefab;
+        weapon.projectileRadius = weaponView.projectileRadius;
+        weapon.projectileSocket = weaponView.projectileSocket;
+        weapon.projectileSpeed = weaponView.projectileSpeed;
+        weapon.totalAmmo = weaponView.totalAmmo;
+        weapon.weaponDamage = weaponView.weaponDamage;
+        weapon.currentInMagazine = weaponView.currentInMagazine;
+        weapon.maxInMagazine = weaponView.maxInMagazine;
+
 
         var playerView = playerGameObject.GetComponent<PlayerSettings>();
         var groundCheckBoxView = playerGameObject.GetComponent<GroundCheckBoxView>();
@@ -47,23 +61,11 @@ sealed class PlayerInitSystem : IEcsInitSystem
         jumpCount.jumpCount = playerView.jumpCount;
         jumpCount.saveJumpCount = playerView.saveJumpCount;
 
-        var weaponEntity = ecsWorld.NewEntity();
-        var weaponView = playerGameObject.GetComponentInChildren<WeaponSettings>();
-        ref var weapon = ref weaponEntity.Get<Weapon>();
-        weapon.owner = playerEntity;
-        weapon.projectilePrefab = weaponView.projectilePrefab;
-        weapon.projectileRadius = weaponView.projectileRadius;
-        weapon.projectileSocket = weaponView.projectileSocket;
-        weapon.projectileSpeed = weaponView.projectileSpeed;
-        weapon.totalAmmo = weaponView.totalAmmo;
-        weapon.weaponDamage = weaponView.weaponDamage;
-        weapon.currentInMagazine = weaponView.currentInMagazine;
-        weapon.maxInMagazine = weaponView.maxInMagazine;
 
         transformRef.transform = playerGameObject.transform;
         runtimeData.playerEntity = playerEntity;
-        hasWeapon.weapon = weaponEntity;
 
+        hasWeapon.weapon = weaponEntity;
         playerGameObject.GetComponent<PlayerView>().entity = playerEntity;
         animationRef.animator = player.playerAnimator;
         Debug.Log("PlayerInitSystem");

@@ -12,6 +12,7 @@ public class WeaponShootSystem : IEcsRunSystem
             ref var weapon = ref filter.Get1(i);
             
             ref var entity = ref filter.GetEntity(i);
+            entity.Del<Shoot>();
                 
             //Debug.Log("WeaponShootSystem");
 
@@ -20,7 +21,6 @@ public class WeaponShootSystem : IEcsRunSystem
                 weapon.currentInMagazine--;
                 Debug.Log(weapon.currentInMagazine);
                 ref var spawnProjectile = ref entity.Get<SpawnProjectile>();
-                entity.Del<Shoot>();
             }
         }
     }
