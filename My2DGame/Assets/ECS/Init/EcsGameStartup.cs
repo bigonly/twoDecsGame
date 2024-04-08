@@ -25,6 +25,7 @@ public class EcsGameStartup : MonoBehaviour
             .Add(new HealthInitSystem())
             .OneFrame<JumpEvent>()
             .Add(new PlayerMouseInputSystem())
+            .Add(new WeaponRorationSystem())
             //.Add(new InitSavedPlayerPositionSystem())
             //.Add(new SavePlayerPositionSystem())
             //.Add(new OneWayPlatfomAvailableSystem())
@@ -39,7 +40,7 @@ public class EcsGameStartup : MonoBehaviour
             .Add(new MovementSystem())
             .Add(new WeaponShootSystem())
             .Add(new SpawnProjectileSystem())
-            //.Add(new ProjectileMoveSystem())
+            .Add(new ProjectileMoveSystem())
             .Inject(configuration)
             .Inject(sceneData)
             .Inject(runtimeData);

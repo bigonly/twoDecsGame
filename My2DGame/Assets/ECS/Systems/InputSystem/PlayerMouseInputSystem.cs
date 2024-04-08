@@ -15,7 +15,6 @@ public class PlayerMouseInputSystem : IEcsRunSystem
             ref var shootComponent = ref inputFilter.Get1(i);
             ref var hasWeapon = ref inputFilter.Get2(i);
             shootComponent.leftMouseButton = Input.GetMouseButton(0);
-            if (shootComponent.leftMouseButton) entity.Get<Shoot>();
             //Debug.Log(shootComponent.leftMouseButton);
         }
     }

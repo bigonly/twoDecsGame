@@ -1,4 +1,5 @@
-﻿using Leopotam.Ecs;
+﻿using Cinemachine;
+using Leopotam.Ecs;
 using UnityEngine;
 
 
@@ -15,6 +16,7 @@ sealed class PlayerInitSystem : IEcsInitSystem
         ref var player = ref playerEntity.Get<Player>();
         ref var mouseinputComponent = ref playerEntity.Get<MouseComponent>();
         ref var hasWeapon = ref playerEntity.Get<HasWeapon>();
+        ref var camera = ref playerEntity.Get<CameraComponent>(); 
         ref var animationRef = ref playerEntity.Get<AnimationRef>();
         ref var transformRef = ref playerEntity.Get<TransformRef>();
         ref var directionComponent = ref playerEntity.Get<DirectionComponent>();
@@ -26,20 +28,26 @@ sealed class PlayerInitSystem : IEcsInitSystem
             staticData.playerPrefab,
             sceneData.playerSpawnPoint.position,
             Quaternion.identity);
-        
+
+        camera.playerCamera = sceneData.playerCamera;
+
+        Debug.Log(camera.playerCamera);
         player.playerTransform = playerGameObject.transform;
         player.playerAnimator = playerGameObject.GetComponent<Animator>();
         player.rigidbody2D = playerGameObject.GetComponent<Rigidbody2D>();
         player.speed = staticData.playerSpeed;
         player.gravity = staticData.gravity;
-
+        
         var weaponEntity = ecsWorld.NewEntity();
         var weaponView = playerGameObject.GetComponentInChildren<WeaponSettings>();
         ref var weapon = ref weaponEntity.Get<Weapon>();
+        camera.transform = weaponView.weaponSocket;
         weapon.owner = playerEntity;
         weapon.projectilePrefab = weaponView.projectilePrefab;
         weapon.projectileRadius = weaponView.projectileRadius;
+        weapon.distance = weaponView.distance;
         weapon.projectileSocket = weaponView.projectileSocket;
+        weapon.weaponSocket = weaponView.weaponSocket;
         weapon.projectileSpeed = weaponView.projectileSpeed;
         weapon.totalAmmo = weaponView.totalAmmo;
         weapon.weaponDamage = weaponView.weaponDamage;

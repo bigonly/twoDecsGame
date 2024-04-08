@@ -1,5 +1,6 @@
 ﻿using Leopotam.Ecs;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
 public class ProjectileMoveSystem : IEcsRunSystem
@@ -12,20 +13,20 @@ public class ProjectileMoveSystem : IEcsRunSystem
             ref var projectile = ref filter.Get1(i);
 
             var position = projectile.projectileGameObject.transform.position;
-            position += projectile.direction * projectile.speed * Time.deltaTime;
-            projectile.projectileGameObject.transform.position = position;
+            var radius = projectile.radius;
+            var direction = projectile.projectileGameObject.transform.right;
+            projectile.projectileGameObject.transform.Translate(Vector2.right * projectile.speed * Time.deltaTime);
 
-            var displacementSilenceLastFrame = position - projectile.previousPos;
-            var hit = Physics.SphereCast(projectile.previousPos, projectile.radius, 
-                displacementSilenceLastFrame.normalized, out var hitInfo, displacementSilenceLastFrame.magnitude);
+            var hit = Physics2D.CircleCast(position, radius, direction, projectile.distance, 6);
                 
             if (hit)
             {
                 ref var entity = ref filter.GetEntity(i);
                 ref var projectileHit = ref entity.Get<ProjectileHit>();
+                projectileHit.raycastHit = hit;
             }
 
-            projectile.previousPos = projectile.projectileGameObject.transform.position;
+            //projectile.previousPos = projectile.projectileGameObject.transform.position;
         }
     }
 }

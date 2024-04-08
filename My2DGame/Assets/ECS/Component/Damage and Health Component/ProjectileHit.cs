@@ -2,5 +2,5 @@
 
 public struct ProjectileHit
 {
-    public RaycastHit raycastHit;
+    public RaycastHit2D raycastHit;
 }
