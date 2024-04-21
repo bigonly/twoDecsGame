@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class WeaponSettings : MonoBehaviour
 {
+    public LayerMask layerMask;
     public GameObject projectilePrefab;
     public Transform projectileSocket;
     public Transform weaponSocket;
     public float projectileSpeed;
     public float projectileRadius;
-    public float distance;
     public int weaponDamage;
     public int currentInMagazine;
     public int maxInMagazine;

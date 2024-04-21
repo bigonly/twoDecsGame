@@ -2,6 +2,7 @@
 
 public struct Enemy
 {
+    public Animator animator;
     public Transform transform;
     public float meleeAttackDistance;
     public float triggerDistance;

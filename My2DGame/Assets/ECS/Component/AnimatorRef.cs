@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public struct AnimationRef
+public struct AnimatorRef
 {
     public Animator animator;
 }

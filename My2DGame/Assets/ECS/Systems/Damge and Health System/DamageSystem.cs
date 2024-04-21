@@ -4,25 +4,22 @@ using UnityEngine;
 
 public class DamageSystem : IEcsRunSystem
 {
-    private readonly EcsFilter<HealthComponent> damageFilter = null;
+    private readonly EcsFilter<DamageEvent> damageFilter;
     public void Run()
     {
         foreach (var i in damageFilter)
         {
-            ref var entity = ref damageFilter.GetEntity(i);
+            ref var entity = ref damageFilter.Get1(i);
+            ref var healthComponent = ref entity.target.Get<HealthComponent>();
 
-            ref var damageComponent = ref entity.Get<DamageComponent>();
-            ref var healthComponent = ref damageFilter.Get1(i);
-            Debug.Log("Form Run: " + healthComponent.currentHealth);
-
-            //healthComponent.currentHealth -= damageComponent.Damage;
+            healthComponent.currentHealth -= entity.value;
 
             if (healthComponent.currentHealth <= 0)
             {
-                Debug.Log("You are Dead");
-                entity.Del<HealthComponent>();
+                entity.target.Get<DeathEvent>();
+                Debug.Log("Enemy " + entity.target + " is dead");
             }
-            entity.Del<DamageComponent>();
+            damageFilter.GetEntity(i).Destroy();
         }
     }
 }

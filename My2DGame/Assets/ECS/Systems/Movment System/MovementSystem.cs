@@ -5,7 +5,7 @@ using UnityEngine;
 sealed class MovementSystem : IEcsRunSystem
 {
     private readonly EcsWorld _world = null;
-    private readonly EcsFilter<Player, DirectionComponent> movableFilter = null;
+    private readonly EcsFilter<Player, KeyboardComponent> movableFilter = null;
     public void Run()
     {
         foreach (var i in movableFilter)

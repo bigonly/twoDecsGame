@@ -3,18 +3,18 @@
 
 public class ReloadSystem : IEcsRunSystem
 {
-    private EcsFilter<TryReload>.Exclude<Reloading> tryReloadFilter;
+    private EcsFilter<TryReload, AnimatorRef>.Exclude<Reloading> tryReloadFilter;
     private EcsFilter<Weapon, ReloadingFinished> reloadingFinishedFilter;
     public void Run()
     {
         foreach (var i in tryReloadFilter)
         {
-            //ref var animatorRef = ref tryReloadFilter.Get2(i);
+            ref var animatorRef = ref tryReloadFilter.Get2(i);
 
-            //animatorRef.animator.SetTrigger("Reload");
+            animatorRef.animator.SetTrigger("Reload");
 
             ref var entity = ref tryReloadFilter.GetEntity(i);
-            entity.Get<Reloading>();
+            entity.Del<Reloading>();
         }
 
         foreach (var i in reloadingFinishedFilter)
@@ -31,10 +31,6 @@ public class ReloadSystem : IEcsRunSystem
                 : weapon.totalAmmo;
 
             ref var entity = ref reloadingFinishedFilter.GetEntity(i);
-            /**if (weapon.owner.Has<Player>())
-            {
-                ui.gameScreen.SetAmmo(weapon.currentInMagazine, weapon.totalAmmo);
-            }**/
             weapon.owner.Del<Reloading>();
             entity.Del<ReloadingFinished>();
         }

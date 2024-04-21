@@ -1,5 +1,4 @@
-﻿using Cinemachine;
-using Leopotam.Ecs;
+﻿using Leopotam.Ecs;
 using UnityEngine;
 
 
@@ -14,12 +13,15 @@ sealed class PlayerInitSystem : IEcsInitSystem
         EcsEntity playerEntity = ecsWorld.NewEntity();
         
         ref var player = ref playerEntity.Get<Player>();
+        ref var health = ref playerEntity.Get<HealthComponent>();
+        ref var playerBody = ref playerEntity.Get<PlayerBody>();
         ref var mouseinputComponent = ref playerEntity.Get<MouseComponent>();
         ref var hasWeapon = ref playerEntity.Get<HasWeapon>();
+        ref var weaponTransform = ref playerEntity.Get<WeaponTransform>();
         ref var camera = ref playerEntity.Get<CameraComponent>(); 
-        ref var animationRef = ref playerEntity.Get<AnimationRef>();
+        ref var animationRef = ref playerEntity.Get<AnimatorRef>();
         ref var transformRef = ref playerEntity.Get<TransformRef>();
-        ref var directionComponent = ref playerEntity.Get<DirectionComponent>();
+        ref var directionComponent = ref playerEntity.Get<KeyboardComponent>();
         ref var jumpCount = ref playerEntity.Get<MultiJumpComponent>();
         ref var jumpComponent = ref playerEntity.Get<JumpComponent>();
         ref var groundCheckBoxComponent = ref playerEntity.Get<GroundCheckBoxComponent>();
@@ -29,10 +31,13 @@ sealed class PlayerInitSystem : IEcsInitSystem
             sceneData.playerSpawnPoint.position,
             Quaternion.identity);
 
-        camera.playerCamera = sceneData.playerCamera;
+        var playerBodyView = playerGameObject.GetComponent<PlayerBodyPart>();
+        playerBody.body = playerBodyView.body;
 
-        Debug.Log(camera.playerCamera);
+        camera.playerCamera = sceneData.playerCamera;
+        
         player.playerTransform = playerGameObject.transform;
+        sceneData.virtualCamera.Follow = player.playerTransform.transform;
         player.playerAnimator = playerGameObject.GetComponent<Animator>();
         player.rigidbody2D = playerGameObject.GetComponent<Rigidbody2D>();
         player.speed = staticData.playerSpeed;
@@ -43,9 +48,9 @@ sealed class PlayerInitSystem : IEcsInitSystem
         ref var weapon = ref weaponEntity.Get<Weapon>();
         camera.transform = weaponView.weaponSocket;
         weapon.owner = playerEntity;
+        weapon.layerMask = weaponView.layerMask;
         weapon.projectilePrefab = weaponView.projectilePrefab;
         weapon.projectileRadius = weaponView.projectileRadius;
-        weapon.distance = weaponView.distance;
         weapon.projectileSocket = weaponView.projectileSocket;
         weapon.weaponSocket = weaponView.weaponSocket;
         weapon.projectileSpeed = weaponView.projectileSpeed;
@@ -54,6 +59,9 @@ sealed class PlayerInitSystem : IEcsInitSystem
         weapon.currentInMagazine = weaponView.currentInMagazine;
         weapon.maxInMagazine = weaponView.maxInMagazine;
 
+        var weaponTransformView = playerGameObject.GetComponentInChildren<WeaponsTransformView>();
+        weaponTransform.weaponSocket = weaponTransformView.weaponSocket;
+        weaponTransform.onHandWeapon = weaponTransformView.onHandWeapon;
 
         var playerView = playerGameObject.GetComponent<PlayerSettings>();
         var groundCheckBoxView = playerGameObject.GetComponent<GroundCheckBoxView>();
@@ -69,6 +77,7 @@ sealed class PlayerInitSystem : IEcsInitSystem
         jumpCount.jumpCount = playerView.jumpCount;
         jumpCount.saveJumpCount = playerView.saveJumpCount;
 
+        health.currentHealth = staticData.playerHealth;
 
         transformRef.transform = playerGameObject.transform;
         runtimeData.playerEntity = playerEntity;

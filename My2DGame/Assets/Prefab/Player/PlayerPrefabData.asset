@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: PlayerPrefabData
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 4216327282727739266, guid: 69c231aeefc090d45af15c6779409c4d, type: 3}
+  playerHealth: 100
   playerSpeed: 10
   gravity: -27

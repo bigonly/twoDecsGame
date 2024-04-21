@@ -13,14 +13,15 @@ public class WeaponShootSystem : IEcsRunSystem
             
             ref var entity = ref filter.GetEntity(i);
             entity.Del<Shoot>();
-                
-            //Debug.Log("WeaponShootSystem");
 
             if (weapon.currentInMagazine > 0)
             {
                 weapon.currentInMagazine--;
-                Debug.Log(weapon.currentInMagazine);
                 ref var spawnProjectile = ref entity.Get<SpawnProjectile>();
+            }
+            else
+            {
+                ref var reload = ref entity.Get<TryReload>();
             }
         }
     }

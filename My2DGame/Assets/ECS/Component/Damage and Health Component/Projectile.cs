@@ -1,10 +1,8 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-
-[Serializable]
 public struct Projectile
 {
+    public LayerMask layerMask;
     public Vector2 direction;
     public Vector2 previousPos;
     public GameObject projectileGameObject;

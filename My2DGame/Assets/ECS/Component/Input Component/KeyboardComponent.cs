@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-public struct DirectionComponent
+public struct KeyboardComponent
 {
     public Vector2 direction;
 }

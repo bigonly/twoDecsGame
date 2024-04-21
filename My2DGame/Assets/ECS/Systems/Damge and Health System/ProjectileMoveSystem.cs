@@ -14,13 +14,15 @@ public class ProjectileMoveSystem : IEcsRunSystem
 
             var position = projectile.projectileGameObject.transform.position;
             var radius = projectile.radius;
+            var layerMask = projectile.layerMask;
             var direction = projectile.projectileGameObject.transform.right;
             projectile.projectileGameObject.transform.Translate(Vector2.right * projectile.speed * Time.deltaTime);
 
-            var hit = Physics2D.CircleCast(position, radius, direction, projectile.distance, 6);
-                
+            var hit = Physics2D.CircleCast(position, radius, projectile.direction, 10f, layerMask);
+            Debug.Log(hit);
             if (hit)
             {
+                //Debug.Log("Hit");
                 ref var entity = ref filter.GetEntity(i);
                 ref var projectileHit = ref entity.Get<ProjectileHit>();
                 projectileHit.raycastHit = hit;
