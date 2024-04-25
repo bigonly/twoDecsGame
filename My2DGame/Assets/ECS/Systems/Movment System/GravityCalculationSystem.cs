@@ -2,7 +2,7 @@
 using UnityEngine;
 
 
-sealed class GravityCalculationSystem : IEcsRunSystem
+public class GravityCalculationSystem : IEcsRunSystem
 {
     private readonly EcsWorld _world = null;
     private readonly EcsFilter<Player, GroundCheckBoxComponent> gravityFilter = null;

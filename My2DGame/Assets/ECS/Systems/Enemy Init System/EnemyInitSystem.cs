@@ -24,6 +24,7 @@ public class EnemyInitSystem : IEcsInitSystem
             enemy.meleeAttackInterval = enemyView.meleeAttackInterval;
             enemy.triggerDistance = enemyView.triggerDistance;
             animatorRef.animator = enemyView.animator;
+
             Debug.Log("EnemyInitSystem");
 
             enemyView.entity = enemyEntity;
