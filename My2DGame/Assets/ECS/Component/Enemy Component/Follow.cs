@@ -2,6 +2,6 @@
 
 public struct Follow
 {
-    public EcsEntity targer;
+    public EcsEntity target;
     public float nextAttackTime;
 }

@@ -17,7 +17,7 @@ public class DamageSystem : IEcsRunSystem
             if (healthComponent.currentHealth <= 0)
             {
                 entity.target.Get<DeathEvent>();
-                Debug.Log("Enemy " + entity.target + " is dead");
+                Debug.Log(entity.target + " is dead");
             }
             damageFilter.GetEntity(i).Destroy();
         }

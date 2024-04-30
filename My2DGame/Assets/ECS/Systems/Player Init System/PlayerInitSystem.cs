@@ -85,6 +85,6 @@ sealed class PlayerInitSystem : IEcsInitSystem
         hasWeapon.weapon = weaponEntity;
         playerGameObject.GetComponent<PlayerView>().entity = playerEntity;
         animationRef.animator = player.playerAnimator;
-        Debug.Log("PlayerInitSystem");
+        Debug.Log("PlayerInitSystem" + "\nHealth:" + health.currentHealth);
     }
 }

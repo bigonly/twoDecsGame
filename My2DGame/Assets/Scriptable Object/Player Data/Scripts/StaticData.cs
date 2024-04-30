@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu (fileName = "PlayerPrefabData", menuName = "StaticData")]
+[CreateAssetMenu (fileName = "PlayerPrefabData", menuName = "StaticData/Player")]
 public class StaticData : ScriptableObject
 {
     public GameObject playerPrefab;

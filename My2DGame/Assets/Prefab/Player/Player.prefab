@@ -566,7 +566,7 @@ GameObject:
   - component: {fileID: 5087823670169371105}
   - component: {fileID: 8422339537246256893}
   - component: {fileID: 395541829475489851}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1392,7 +1392,6 @@ GameObject:
   m_Component:
   - component: {fileID: 857160175106809246}
   - component: {fileID: 5873111280348886924}
-  - component: {fileID: 7317550313209203173}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -1430,16 +1429,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponSocket: {fileID: 857160175106809246}
   onHandWeapon: {fileID: 29902369261110655}
---- !u!114 &7317550313209203173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7767002576671078081}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815c5aa456a66c7438bb518dbfab1b64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offset: 0

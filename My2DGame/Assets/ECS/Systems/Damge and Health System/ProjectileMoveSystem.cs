@@ -19,7 +19,7 @@ public class ProjectileMoveSystem : IEcsRunSystem
             projectile.projectileGameObject.transform.Translate(Vector2.right * projectile.speed * Time.deltaTime);
 
             var hit = Physics2D.CircleCast(position, radius, projectile.direction, 10f, layerMask);
-            Debug.Log(hit);
+
             if (hit)
             {
                 //Debug.Log("Hit");
