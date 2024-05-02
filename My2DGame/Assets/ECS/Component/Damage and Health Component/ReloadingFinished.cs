@@ -1,3 +1,1 @@
-﻿public struct ReloadingFinished
-{
-}
+﻿public struct ReloadingFinished { }

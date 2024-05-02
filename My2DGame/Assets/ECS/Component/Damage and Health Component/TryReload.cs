@@ -1,4 +1,1 @@
-﻿public struct TryReload
-{
-
-}
+﻿public struct TryReload { }

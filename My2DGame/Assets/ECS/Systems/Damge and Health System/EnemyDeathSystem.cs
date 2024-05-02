@@ -11,7 +11,11 @@ public class EnemyDeathSystem : IEcsRunSystem
             ref var animationRef = ref deadEnemies.Get3(i);
             
             animationRef.animator.SetTrigger("Death");
-            enemy.enemyPatrol.enabled = false;
+
+            if (!enemy.rangedEnemy)
+            {
+                enemy.enemyPatrol.enabled = false;
+            }
 
             ref var entity = ref deadEnemies.GetEntity(i);
             entity.Destroy();

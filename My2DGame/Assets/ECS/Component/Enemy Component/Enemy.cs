@@ -7,6 +7,7 @@ public struct Enemy
     public LayerMask playerLayerMask;
     public BoxCollider2D boxCollider2D;
     public EnemyPatrol enemyPatrol;
+    public WeaponSettings weaponSettings;
     public float attackDistance;
     public float triggerDistance;
     public float attackInterval;

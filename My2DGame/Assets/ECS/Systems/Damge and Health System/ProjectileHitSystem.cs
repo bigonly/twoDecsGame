@@ -1,5 +1,4 @@
 ﻿using Leopotam.Ecs;
-using UnityEngine;
 
 public class ProjectileHitSystem : IEcsRunSystem
 {
@@ -18,6 +17,15 @@ public class ProjectileHitSystem : IEcsRunSystem
                 {
                     ref var e = ref ecsWorld.NewEntity().Get<DamageEvent>();
                     e.target = enemyView.entity;
+                    e.value = projectile.damage;
+                }
+            }
+            if (hit.raycastHit.collider.gameObject.TryGetComponent(out PlayerView playerView))
+            {
+                if (playerView.entity.IsAlive())
+                {
+                    ref var e = ref ecsWorld.NewEntity().Get<DamageEvent>();
+                    e.target = playerView.entity;
                     e.value = projectile.damage;
                 }
             }

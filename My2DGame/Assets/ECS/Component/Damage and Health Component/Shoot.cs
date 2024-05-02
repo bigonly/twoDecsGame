@@ -1,5 +1,2 @@
 ﻿using Leopotam.Ecs;
-
-public struct Shoot : IEcsIgnoreInFilter
-{
-}
+public struct Shoot : IEcsIgnoreInFilter { }

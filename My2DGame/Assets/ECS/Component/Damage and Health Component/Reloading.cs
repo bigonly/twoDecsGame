@@ -1,6 +1,2 @@
 ﻿using Leopotam.Ecs;
-
-public struct Reloading : IEcsIgnoreInFilter
-{
-
-}
+public struct Reloading : IEcsIgnoreInFilter { }

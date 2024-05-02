@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-public class EnemyIdleSystem : IEcsRunSystem
+public class EnemyMeleeAttackSystem : IEcsRunSystem
 {
     private 
         EcsFilter<Enemy, AnimatorRef, Idle>.
@@ -14,7 +14,6 @@ public class EnemyIdleSystem : IEcsRunSystem
         foreach (var i in calmEnemies)
         {
             ref var enemy = ref calmEnemies.Get1(i);
-            ref var player = ref runtimeData.playerEntity.Get<Player>();
             ref var animatorRef = ref calmEnemies.Get2(i);
 
             if (enemy.rangedEnemy) continue;
