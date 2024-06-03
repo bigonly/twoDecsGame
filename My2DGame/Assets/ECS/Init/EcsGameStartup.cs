@@ -1,71 +1,73 @@
-using System;
 using UnityEngine;
 using Leopotam.Ecs;
-using Voody.UniLeo;
 
-namespace NTC.Source.Code.Ecs
+
+public class EcsGameStartup : MonoBehaviour
 {
-    public sealed class EcsGameStartup : MonoBehaviour
+    public StaticData configuration;
+    public SceneData sceneData;
+    public UI ui;
+
+    private EcsWorld world;
+    private EcsSystems systems;
+
+    private void Start()
     {
-        private EcsWorld world;
-        private EcsSystems systems;
+        world = new EcsWorld();
+        systems = new EcsSystems(world);
+        RuntimeData runtimeData = new RuntimeData();
+#if UNITY_EDITOR
+        Leopotam.Ecs.UnityIntegration.EcsWorldObserver.Create (world);
+        Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create (systems);
+#endif                
+        systems
+            .Add(new LimitFPSSystem())
+            .Add(new PlayerInitSystem())
+            .Add(new EnemyInitSystem())
+            .Add(new BoneInitSystem())
+            .OneFrame<JumpEvent>()
+            .OneFrame<TryReload>()
+            .Add(new PlayerMouseInputSystem())
+            .Add(new PauseSystem())
+            .Add(new WeaponRorationSystem())
+            .Add(new PlayerFlipSystem())
+            .Add(new PlayerAnimationSystem())
+            .Add(new EnemyAttackIntervalSystem())
+            .Add(new EnemyMeleeAttackSystem())
+            .Add(new EnemyRangeAttackSystem())
+            .Add(new DamageSystem())
+            .Add(new HealthSystem())
+            .Add(new PlayerHealthSystem())
+            .Add(new EnemyDeathSystem())
+            .Add(new PlayerDeathSystem())
+            .Add(new PlayerJumpSendEventSystem())
+            .Add(new GravityCalculationSystem())
+            .Add(new GroundCheckSystem())
+            .Add(new MultiJumpCountSystem())
+            .Add(new PlayerJumpSystem())
+            .Add(new PlayerKeyboardInputSystem())
+            .Add(new MovementSystem())
+            .Add(new WeaponShootSystem())
+            .Add(new SpawnProjectileSystem())
+            .Add(new ProjectileMoveSystem())
+            .Add(new ProjectileHitSystem())
+            .Add(new ReloadSystem())
+            .Inject(configuration)
+            .Inject(sceneData)
+            .Inject(ui)
+            .Inject(runtimeData);
 
-        private void Start()
-        {
-            world = new EcsWorld();
-            systems = new EcsSystems(world);
+        systems.Init();
+    }
 
-            systems.ConvertScene();
+    private void Update()
+    {
+        systems?.Run();
+    }
 
-            AddInjections();
-            AddOneFrames();
-            AddSystems();
-
-            systems.Init();
-        }
-
-        private void AddInjections()
-        {
-
-        }
-        private void AddSystems()
-        {
-            systems
-                .Add(new LimitFPSSystem())
-                .Add(new InitSavedPlayerPositionSystem())
-                .Add(new SavePlayerPositionSystem())
-                .Add(new OneWayPlatfomAvailableSystem())
-                .Add(new PlayerOneWayPlatformSystem())
-                .Add(new PlayerJumpSendEventSystem())
-                .Add(new GravityCalculationSystem())
-                .Add(new GroundCheckSystem())
-                .Add(new MultiJumpCountSystem())
-                .Add(new PlayerJumpSystem())
-                .Add(new PlayerInputSystem())
-                .Add(new MovementSystem())
-                .Add(new HealthInitSystem())
-                .Add(new DamageSystem())
-            ;
-        }
-        private void AddOneFrames()
-        {
-            systems
-                .OneFrame<JumpEvent>();
-        }
-
-        private void Update()
-        {
-            systems.Run();
-        }
-
-        private void OnDestroy()
-        {
-            if (systems == null) return;
-
-            systems.Destroy();
-            systems = null;
-            world.Destroy();
-            world = null;
-        }
+    private void OnDestroy()
+    {
+        world.Destroy();
+        systems.Destroy();
     }
 }

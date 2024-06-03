@@ -1,6 +1,3 @@
 ﻿using Voody.UniLeo;
 
-namespace NTC.Source.Code.Ecs
-{
-    public class GroundCheckBoxProvider : MonoProvider<GroundCheckBoxComponent> { }
-}
+public class GroundCheckBoxProvider : MonoProvider<GroundCheckBoxComponent> { }

@@ -18,9 +18,14 @@ public class PlayerAnim : MonoBehaviour
     public LayerMask whatIsGround;
 
     private Animator anim;
+    private Animator camAnim;
+
+    public GameObject hatPrefab;
+    public GameObject headObject;
 
     private void Start()
     {
+        camAnim = GameObject.FindGameObjectWithTag("Virtual Camera").GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -31,11 +36,11 @@ public class PlayerAnim : MonoBehaviour
         
         if(facingRight == false && moveInput > 0)
         {
-            Flip();
+            //Flip();
         }
         else if(facingRight == true && moveInput < 0)
         {
-            Flip();
+            //Flip();
         }
         if(moveInput == 0)
         {
@@ -55,6 +60,7 @@ public class PlayerAnim : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpForce;
             anim.SetTrigger("takeOf");
+            camAnim.SetTrigger("shake");
         }
 
         if(isGrounded == true) 

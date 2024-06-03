@@ -6,6 +6,15 @@ TagManager:
   tags:
   - OneWayPlatform
   - Bone
+  - Virtual Camera
+  - Gear
+  - Enemy
+  - PlayerAnim2
+  - Bonetext
+  - scoretext
+  - Hat
+  - Boss
+  - HP
   layers:
   - Default
   - TransparentFX
@@ -14,10 +23,10 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
-  - 
+  - Solid
+  - PostProccessing
+  - Player
+  - Enemy
   - 
   - 
   - 
@@ -42,4 +51,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: boss
+    uniqueID: 869112033
     locked: 0

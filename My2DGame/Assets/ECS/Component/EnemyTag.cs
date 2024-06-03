@@ -1,7 +1,4 @@
-namespace NTC.Source.Code.Ecs
+public struct EnemyTag
 {
-    public struct EnemyTag
-    {
 
-    }
 }

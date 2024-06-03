@@ -1,29 +1,30 @@
 ﻿using Leopotam.Ecs;
 using UnityEngine;
 
-namespace NTC.Source.Code.Ecs
+
+public class DamageSystem : IEcsRunSystem
 {
-    public class DamageSystem : IEcsRunSystem
+    private readonly EcsFilter<DamageEvent> damageFilter;
+    private UI ui;
+    public void Run()
     {
-        private readonly EcsFilter<HealthComponent> damageFilter = null;
-        public void Run()
+        foreach (var i in damageFilter)
         {
-            foreach (var i in damageFilter)
+            ref var entity = ref damageFilter.Get1(i);
+            ref var healthComponent = ref entity.target.Get<HealthComponent>();
+
+            healthComponent.currentHealth -= entity.value;
+
+            if (healthComponent.ecsEntity.Has<Player>())
             {
-                ref var entity = ref damageFilter.GetEntity(i);
-
-                ref var damageComponent = ref entity.Get<DamageComponent>();
-                ref var healthComponent = ref damageFilter.Get1(i);
-                Debug.Log("Form Run: " + healthComponent.currentHealth);
-
-                healthComponent.currentHealth -= damageComponent.Damage;
-
-                if (healthComponent.currentHealth <= 0)
-                {
-                    Debug.Log("You are Dead");
-                }
-                entity.Del<DamageComponent>();
+                ui.gameScreen.SetHealth(healthComponent.currentHealth);
             }
+            if (healthComponent.currentHealth <= 0)
+            {
+                entity.target.Get<DeathEvent>();
+                Debug.Log(entity.target + " is dead");
+            }
+            damageFilter.GetEntity(i).Destroy();
         }
     }
 }

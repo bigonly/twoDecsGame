@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu (fileName = "LocationName", menuName = "Player/Location/Position")]
+[CreateAssetMenu (fileName = "LocationName", menuName = "Player/Location")]
 public class PlayerPositionData : ScriptableObject
 {
     [Header("Location Name")]

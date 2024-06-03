@@ -1,11 +1,10 @@
-﻿using System;
+﻿using Leopotam.Ecs;
+using System;
 
-namespace NTC.Source.Code.Ecs
+[Serializable]
+public struct HealthComponent
 {
-    [Serializable]
-    public struct HealthComponent
-    {
-        public float currentHealth;
-        public float maxHealth;
-    }
+    public EcsEntity ecsEntity;
+    public float currentHealth;
+    public float maxHealth;
 }

@@ -1,10 +1,8 @@
 ﻿using System;
 
-namespace NTC.Source.Code.Ecs
+
+[Serializable]
+public struct LimitFPSComponent
 {
-    [Serializable]
-    public struct LimitFPSComponent
-    {
-        public int targetFPS;
-    }
+    public int targetFPS;
 }
